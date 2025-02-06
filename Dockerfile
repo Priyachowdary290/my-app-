@@ -7,7 +7,7 @@ WORKDIR /app
 # Copy application code and dependencies
 COPY requirements.txt .
 RUN pip install -r requirements.txt
-COPY . .
+COPY app.py .
 
 # Expose the application port
 EXPOSE 5000
