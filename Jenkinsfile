@@ -10,8 +10,8 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 // Pull code from Git
-                git url: '', branch: 'main'
-            }https://github.com/Priyachowdary290/my-app-.git
+                git url: 'https://github.com/Priyachowdary290/my-app-.git', branch: 'main'
+            }
         }
 
         stage('Build Docker Image') {
