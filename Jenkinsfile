@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'aravind189/my-app:v1'
+        DOCKER_IMAGE = 'priya290/priya'
         DOCKER_CREDENTIALS_ID = 'docker-hub'
     }
 
@@ -10,8 +10,8 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 // Pull code from Git
-                git url: 'https://github.com/aravind189/my-app.git', branch: 'main'
-            }
+                git url: '', branch: 'main'
+            }https://github.com/Priyachowdary290/my-app-.git
         }
 
         stage('Build Docker Image') {
